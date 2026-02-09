@@ -1,101 +1,279 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Великі Мости — місто у Львівській області</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-            color: #222;
-        }
-        header {
-            background: #2e6da4;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        h2 {
-            color: #2e6da4;
-        }
-        img {
-            width: 100%;
-            max-width: 800px;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            font-size: 14px;
-        }
-        .badge {
-            display: inline-block;
-            background: #e6eef7;
-            padding: 6px 10px;
-            border-radius: 6px;
-            margin: 4px 4px 0 0;
-        }
-    </style>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#003366">
 
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="email=no">
+  
+  <title>Expertise Garage Doors</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset default margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global font */
+    body, h1, h2, h3, h4, h5, h6, p, a, li {
+      font-family: 'Anton SC', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #ffffff;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      padding-top: constant(safe-area-inset-top);
+      padding-top: env(safe-area-inset-top);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      background-image: url('widePhoto.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 139, 0.5); /* semi-transparent blue overlay */
+      z-index: 0;
+    }
+
+    .hero h1 {
+  z-index: 1;
+  margin-top: 40px;
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero-center {
+  flex: 1;                     /* takes remaining space */
+  display: flex;
+  align-items: center;         /* vertical center */
+  justify-content: center;     /* horizontal center */
+  z-index: 1;
+}
+
+    .hero-text {
+      z-index: 1;
+      margin-top: 30px;
+      font-size: 1.5rem;
+      line-height: 1.8;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .hero-text span {
+      display: block;
+      margin: 8px 0;
+    }
+
+.hero h2.hero-subtitle {
+  font-size: clamp(1.5rem, 3vw, 2.5rem); /* scales with screen size */
+  color: #ffffff;                        /* white text */
+  font-weight: 700;
+  margin-top: 10px;
+  white-space: nowrap;                    /* never wraps */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* optional for readability */
+}
+
+.price-tagline, 
+.price-tagline span {
+  font-size: clamp(1rem, 4vw, 2rem);
+  font-weight: 700;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  text-shadow: none !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+
+.price-tagline a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+    .small-note {
+  font-size: 1rem;      /* smaller than your main hero text */
+  opacity: 0.9;         /* slightly softer */
+  margin: 8px 0 12px;
+}
+    /* About Section */
+    .about {
+      padding: 100px 40px;
+      background-color: #003366;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .about p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #ffffff;
+    }
+/* Important Info Section */
+.important-info {
+  padding: 60px 20px;
+  background-color: #ffffff; /* white background */
+  color: #003366; /* dark blue text */
+  text-align: center;
+}
+
+.important-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #003366; /* ensure header is dark blue */
+}
+
+.important-info p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 10px auto;
+  color: #003366; /* ensure paragraph text is dark blue */
+}
+
+.important-info .small-note {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 10px;
+  color: #003366; /* dark blue note */
+}
+    /* Gallery Section */
+    .gallery {
+      padding: 60px 20px;
+      background-color: #f0f8ff;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 40px 20px;
+      background-color: #003366;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .contact p {
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      background-color: #001f4d;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive Text */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .hero-text {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
 <body>
 
-<header>
-    <h1>Великі Мости</h1>
-    <p>Невелике місто у Львівській області</p>
-</header>
+<section class="hero">
+  <h1>Expertise Garage Doors</h1>
+  <h2 class="hero-subtitle">
+    Florida's Best Value Garage Door Installation
+  </h2>
 
-<section>
-    <h2>Фото міста</h2>
- <img src="images/ velyki-mosty.jpg" alt="Velyki Most">
-</section>
-
-<section>
-    <h2>Про місто</h2>
-    <p>
-        Великі Мости — це місто у Шептицькому районі Львівської області.
-        Воно розташоване неподалік річки Рата та має зручне сполучення з іншими
-        населеними пунктами регіону.
+  <div class="hero-center">
+    <p class="hero-text">
+      <span>Call or text us today for a free estimate:</span>
+      <span><a href="tel:+18137053104">813-705-3104</a></span>
+      <span><a href="mailto:Expertisegdfl@gmail.com">Expertisegdfl@gmail.com</a></span>
+      <br><br>
+      <span>See our work below</span>
     </p>
-    <p>
-        Місто відоме своєю спокійною атмосферою, зеленими зонами та
-        зручною інфраструктурою для проживання.
-    </p>
+  </div>
 </section>
 
-<section>
-    <h2>Основні факти</h2>
-    <div class="badge">Львівська область</div>
-    <div class="badge">Шептицький район</div>
-    <div class="badge">Мале місто</div>
-    <div class="badge">Річка Рата</div>
+<!-- Important Info Section -->
+<section class="important-info">
+  <h2>IMPORTANT</h2>
+  <p>
+    We install garage doors all around Florida!
+  </p>
+  <p class="small-note">
+    *No payment required until the job is complete and you are fully satisfied.
+  </p>
 </section>
+  
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>At Expertise Garage Doors, we offer a wide variety of garage door designs and sizes to fit every home and business. This isn’t just talk! The gallery below shows real installations we’ve completed for our happy clients across Florida.</p>
+  </section>
 
-<section>
-    <h2>Інфраструктура</h2>
-    <ul>
-        <li>Школи та дитячі садки</li>
-        <li>Місцеві магазини та ринок</li>
-        <li>Медичні заклади</li>
-        <li>Транспортне сполучення</li>
-    </ul>
-</section>
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <img src="images/photo1.jpg" alt="Garage Door 1">
+    <img src="images/photo2.jpg" alt="Garage Door 2">
+    <img src="images/photo3.jpg" alt="Garage Door 3">
+    <img src="images/photo4.jpg" alt="Garage Door 4">
+  </section>
 
-<footer>
-    © 2023 • Інформаційна сторінка про місто Великі Мости
-</footer>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:Expertisegdfl@gmail.com" style="color: #ffffff;">Expertisegdfl@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Expertise Garage Doors. All rights reserved.
+  </footer>
 
 </body>
 </html>
